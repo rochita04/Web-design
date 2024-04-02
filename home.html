@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Good Health And Well Being</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="file:///C:/Users/Rochita/Desktop/united-nations-logo-9CBFC2E65F-seeklogo.com.png" alt="Logo">
+        <h1>Department of Economic and Social Affairs</h1>
+        <h2>Sustainable Development</h2>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">User Profile</a></li>
+            <li><a href="file:///C:/Users/Rochita/Desktop/feedback.html?name=%2Cbnm%2C&email=fghjkl%40gmail.com&subject=ghjk&details=ghjk%2C&theme=General">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <div class="green-segment">
+        <center>
+            <h2><u>Goal 3</u></h2>
+            <img src="file:///C:/Users/Rochita/Desktop/Health-logo-on-transparent-background-PNG.png" alt="logo">
+            <br>
+            <h3>"Health is a state of complete physical, mental, and social wellbeing,<br>not merely the absence of disease or infirmity"</h3>
+        </center>
+    </div>
+    <p>
+        <center>
+            Well-being and good health are the cornerstones of a fulfilling life. They encompass physical, mental, emotional,<br> and social dimensions, each playing a vital role in our overall happiness and satisfaction. Physical well-being involves taking care<br> of our bodies through healthy habits like nutrition and exercise. Mental well-being encompasses managing stress <br>  and nurturing a positive mindset. Emotional well-being entails understanding and expressing our feelings in healthy ways.<br>  Social well-being involves building meaningful connections with others. By prioritizing these aspects of <br>  well-being and adopting healthy lifestyle practices, we can cultivate a balanced and vibrant life.
+        </center>
+    </p>
+
+    <nav class="black-nav">
+        <ul class="black-nav-content">
+            <li><a href="#" onclick="changeContent('mentalHealth', this)" class="active">Mental health</a></li>
+            <li><a href="#" onclick="changeContent('wellbeing', this)">Well Being</a></li>
+            <li><a href="#" onclick="changeContent('importance', this)">Importance Of Both</a></li>
+            
+        </ul>
+    </nav>
+
+    <div id="content">
+        <p>Mental health is a multifaceted aspect of human well-being that encompasses emotional, psychological, and social dimensions, profoundly influencing our thoughts, feelings, and behaviors. It's not merely the absence of mental illness but rather a state of flourishing where individuals can effectively cope with the stresses of life, form meaningful relationships, and realize their full potential. A strong foundation of mental health enables us to navigate the complexities of daily life with resilience, adaptability, and a sense of purpose.<br><br> However, mental health challenges such as anxiety disorders, mood disorders, and psychotic disorders can disrupt this equilibrium, affecting cognition, mood regulation, and interpersonal relationships. Additionally, environmental factors such as trauma, discrimination, and socioeconomic disparities can exacerbate mental health issues, underscoring the importance of addressing social determinants of well-being.<br><br> Promoting mental health involves a comprehensive approach that includes destigmatizing mental illness, increasing awareness and understanding, and providing access to evidence-based treatments and support services. This encompasses individual-level strategies like practicing self-care, seeking therapy, and building a strong support network, as well as broader societal efforts to reduce barriers to mental healthcare and foster inclusive, supportive communities. By prioritizing mental health at both the individual and societal levels, we can cultivate a world where everyone has the opportunity to thrive and lead fulfilling lives.</p>
+    </div>
+<center> <h2>Read More About The 5 Important Components of Health and Wellness</h2></center>
+<table>
+    <tr>
+        <td><img src="file:///C:/Users/Rochita/Desktop/health-fitness-cartoon_24640-25707.avif" alt="image"><br><a href="file:///C:/Users/Rochita/Desktop/content_page.html#section4"> Physical</a></td>
+        <td><img src="file:///C:/Users/Rochita/Desktop/brain.jpg" alt="image"><br><a href="https://www.w3schools.com"> Mental</a></td>
+        <td><img src="file:///C:/Users/Rochita/Desktop/intellectual-wellness-1.jpg" alt="img"><br><a href="#">Intellectual</a></td>
+        <td><img src="file:///C:/Users/Rochita/Desktop/Celebrating-Work-Anniversaries.png" alt="img"><br><a href="#">Social</a></td>
+        <td><img src="file:///C:/Users/Rochita/Desktop/Mental-Health-Month-Landing-page-Spiritual-Asset.png" alt="img"><br><a href="#">Spiritual</a></td>
+    </tr>
+</table>
+    <footer>
+        <p>2024 Department of Economic and Social Affairs. All rights reserved. | <a href="file:///C:/Users/Rochita/Desktop/feedback.html?name=%2Cbnm%2C&email=fghjkl%40gmail.com&subject=ghjk&details=ghjk%2C&theme=General">Feedback</a></p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var defaultLink = document.querySelector(".black-nav ul li a");
+            defaultLink.classList.add("active");
+        });
+
+        function changeContent(page, clickedLink) {
+            var contentDiv = document.getElementById("content");
+            var navLinks = document.querySelectorAll(".black-nav ul li a");
+            
+            navLinks.forEach(function(link) {
+                link.classList.remove("active");
+            });
+            
+            clickedLink.classList.add("active");
+            
+            switch (page) {
+                case 'mentalHealth':
+                    contentDiv.innerHTML = `
+                        
+                        <p>Mental health is a multifaceted aspect of human well-being that encompasses emotional, psychological, and social dimensions, profoundly influencing our thoughts, feelings, and behaviors. It's not merely the absence of mental illness but rather a state of flourishing where individuals can effectively cope with the stresses of life, form meaningful relationships, and realize their full potential. A strong foundation of mental health enables us to navigate the complexities of daily life with resilience, adaptability, and a sense of purpose.<br><br> However, mental health challenges such as anxiety disorders, mood disorders, and psychotic disorders can disrupt this equilibrium, affecting cognition, mood regulation, and interpersonal relationships. Additionally, environmental factors such as trauma, discrimination, and socioeconomic disparities can exacerbate mental health issues, underscoring the importance of addressing social determinants of well-being. Promoting mental health involves a comprehensive approach that includes destigmatizing mental illness, increasing awareness and understanding, and providing access to evidence-based treatments and support services.<br><br> This encompasses individual-level strategies like practicing self-care, seeking therapy, and building a strong support network, as well as broader societal efforts to reduce barriers to mental healthcare and foster inclusive, supportive communities. By prioritizing mental health at both the individual and societal levels, we can cultivate a world where everyone has the opportunity to thrive and lead fulfilling lives.</p>
+                    `;
+                    break;
+                case 'wellbeing':
+                    contentDiv.innerHTML = `
+                       
+                        <p>Well-being encompasses a multifaceted approach to living a fulfilling and satisfying life, integrating various dimensions of health and happiness. It transcends mere physical health and extends to mental, emotional, and social well-being. Physical well-being involves maintaining a healthy lifestyle through nutritious eating, regular exercise, sufficient sleep, and avoiding harmful substances.<br><br> Mental well-being encompasses cognitive function, emotional resilience, and psychological flexibility, allowing individuals to cope with stress, regulate emotions, and cultivate a positive mindset. Emotional well-being involves self-awareness, empathy, and the ability to navigate and express emotions in healthy ways, fostering inner harmony and contentment. <br><br>Social well-being entails fostering supportive relationships, building social connections, and engaging in meaningful interactions, contributing to a sense of belonging, connectedness, and community. By nurturing all aspects of well-being and adopting holistic approaches to self-care, individuals can enhance their quality of life, experience greater fulfillment, and thrive in their personal and professional pursuits.</p>
+                    `;
+                    break;
+                case 'importance':
+                    contentDiv.innerHTML = `
+                        
+                        <p>The importance of mental health and well-being cannot be overstated, as they profoundly impact every aspect of a person's life. When individuals prioritize their mental health, they experience numerous positive outcomes that contribute to their overall quality of life. Firstly, maintaining good mental health enables individuals to effectively cope with the stresses and challenges of daily life. By developing resilience and adaptive coping mechanisms, they can navigate difficult situations with clarity, composure, and confidence.<br><br>
+
+Moreover, prioritizing mental health fosters emotional stability and psychological well-being. It empowers individuals to better understand and manage their emotions, promoting inner harmony, self-awareness, and emotional intelligence. This, in turn, enhances their interpersonal relationships, as they can communicate more effectively, empathize with others, and form deeper connections.<br><br>
+
+Additionally, investing in mental health leads to improved cognitive function and decision-making abilities. When individuals prioritize self-care practices such as mindfulness, meditation, and adequate sleep, they experience enhanced concentration, memory retention, and problem-solving skills. This facilitates greater productivity, creativity, and overall cognitive performance in both personal and professional endeavors.<br><br>
+
+Furthermore, good mental health positively impacts physical health outcomes. Research has shown that psychological well-being is closely linked to immune function, cardiovascular health, and longevity. By reducing stress levels and promoting healthy lifestyle habits, individuals can lower their risk of chronic diseases and improve their overall physical well-being.<br><br>
+
+Ultimately, prioritizing mental health and well-being leads to a more fulfilling and satisfying life. It allows individuals to experience greater levels of happiness, fulfillment, and life satisfaction. By investing in self-care, seeking support when needed, and fostering positive mental health practices, individuals can unlock their full potential and thrive in all aspects of their lives.</p>
+                    `;
+                    break;
+            }
+        }
+    </script>
+
+</body>
+</html>
